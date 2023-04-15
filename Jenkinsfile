@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('checkout code') {
+    stage('Checkout') {
       steps {
         git(url: 'https://github.com/Vladikus004/cicd_with_docker', branch: 'main')
       }
