@@ -13,7 +13,7 @@ pipeline {
       }
     }
 
-    stage('build docker') {
+    stage('Build docker') {
       steps {
         sh 'sudo docker build -t pelanglene/test .'
       }
@@ -21,7 +21,7 @@ pipeline {
 
     stage('Run docker') {
       steps {
-        sh 'sudo docker run -d pelanglene/test'
+        sh 'sudo docker run pelanglene/test'
       }
     }
 
