@@ -21,7 +21,8 @@ pipeline {
 
     stage('Run docker') {
       steps {
-        sh 'sudo docker run pelanglene/test'
+        sh '''sudo docker run -v ~/data_from_docker:/usr/src/app/data pelanglene/test
+'''
       }
     }
 
