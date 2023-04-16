@@ -15,7 +15,7 @@ pipeline {
 
     stage('build docker') {
       steps {
-        sh 'sudo -S docker build -t pelanglene/docker_test .'
+        sh 'sudo docker build -t pelanglene/docker_test .'
       }
     }
 
