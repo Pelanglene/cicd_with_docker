@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('Build docker') {
+      steps {
+        sh 'sudo docker build Dockerfile .'
+      }
+    }
+
   }
 }
