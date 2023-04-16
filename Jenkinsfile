@@ -19,5 +19,11 @@ pipeline {
       }
     }
 
+    stage('Run docker') {
+      steps {
+        sh 'sudo docker run -d pelanglene/test'
+      }
+    }
+
   }
 }
